@@ -1,0 +1,17 @@
+.orders {
+  &__block {
+    padding: 10px;
+
+    .title {
+      width: max-content;
+      background-color: $background-dark-absolute;
+      color: $font-light;
+      padding: 5px 10px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .data {
+      margin-top: 10px;
+    }
+  }
+}

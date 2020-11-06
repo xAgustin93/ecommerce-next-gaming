@@ -1,0 +1,21 @@
+.change-email-form {
+  padding: 20px 15px;
+
+  > h4 {
+    color: $primary;
+    font-size: 22px;
+
+    > span {
+      font-weight: 100;
+      font-size: 12px;
+    }
+  }
+
+  > form {
+    text-align: center;
+
+    .submit {
+      padding: 12px 60px;
+    }
+  }
+}

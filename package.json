@@ -5,11 +5,28 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.11.0",
+    "classnames": "^2.2.6",
+    "formik": "^2.2.1",
+    "jwt-decode": "^3.0.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
     "next": "10.0.0",
+    "node-sass": "^4.14.1",
+    "query-string": "^6.13.6",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-player": "^2.6.2",
+    "react-slick": "^0.27.12",
+    "react-toastify": "^6.0.9",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.1",
+    "slick-carousel": "^1.8.1",
+    "yup": "^0.29.3"
   }
 }
