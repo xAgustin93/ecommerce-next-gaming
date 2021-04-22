@@ -31,7 +31,7 @@ export default function ListGames(props) {
       <Grid>
         <Grid.Row columns={getColumnsRender()}>
           {map(games, (game) => (
-            <Game game={game} />
+            <Game key={game.id} game={game} />
           ))}
         </Grid.Row>
       </Grid>
