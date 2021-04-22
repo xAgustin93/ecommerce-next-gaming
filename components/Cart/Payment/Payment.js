@@ -4,7 +4,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import FormPayment from "./FormPayment";
 import { STRIPE_TOKEN } from "../../../utils/constants";
 
-const stripePrimise = loadStripe(STRIPE_TOKEN);
+const stripePromise = loadStripe(STRIPE_TOKEN);
 
 export default function Payment(props) {
   const { products, address } = props;
@@ -13,7 +13,7 @@ export default function Payment(props) {
     <div className="payment">
       <div className="title">Pago</div>
       <div className="data">
-        <Elements stripe={stripePrimise}>
+        <Elements stripe={stripePromise}>
           <FormPayment products={products} address={address} />
         </Elements>
       </div>
