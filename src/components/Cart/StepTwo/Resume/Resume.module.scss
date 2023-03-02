@@ -1,0 +1,77 @@
+@import "~/src/scss/index.scss";
+
+.resume > h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.block,
+.blockTotal {
+  background-color: $background-quaternary;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border-secondary;
+    padding: 10px 0;
+
+    &:last-of-type {
+      border: 0;
+      padding-bottom: 0;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        font-weight: bold;
+        margin-bottom: -5px;
+        padding-right: 50px;
+      }
+
+      span {
+        font-size: 10px;
+        color: $text-secondary;
+      }
+    }
+
+    > span {
+      color: $text-secondary;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.blockTotal {
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    > span {
+      font-weight: bold;
+
+      &:last-of-type {
+        font-size: 18px;
+      }
+    }
+  }
+}

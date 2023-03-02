@@ -1,0 +1,46 @@
+@import "~/src/scss/index.scss";
+
+.container {
+  display: flex;
+  position: relative;
+  height: 500px;
+  background-color: #489bca;
+  background-image: radial-gradient(
+    circle at center bottom,
+    #489bca 0,
+    #154483 29%,
+    #0f0f1b 73%
+  );
+
+  &::after {
+    content: "";
+    background-color: $background-primary;
+    position: absolute;
+    bottom: -1px;
+    height: 60px;
+    width: 100%;
+    clip-path: polygon(0 100%, 100% 100%, 0 0);
+  }
+}
+
+.containerImage {
+  display: flex !important;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+.infoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  h3 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

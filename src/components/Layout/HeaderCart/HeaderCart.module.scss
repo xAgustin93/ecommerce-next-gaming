@@ -1,0 +1,126 @@
+@import "~/src/scss/index.scss";
+
+.headerCart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  z-index: 5;
+  background-color: $background-tertiary;
+}
+
+.left {
+  width: 20%;
+
+  img {
+    height: 30px;
+  }
+}
+
+.center {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    &.active {
+      > span {
+        color: $text-primary;
+      }
+      .number {
+        border-color: $primary;
+      }
+    }
+
+    &.success .number {
+      border-color: $primary;
+      background-color: $primary;
+      color: $primary;
+
+      i {
+        display: flex;
+        position: absolute;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &.success .space {
+      background-color: $primary;
+    }
+
+    > span {
+      color: $text-secondary;
+    }
+
+    .number {
+      border: 3px solid $border-primary;
+      font-size: 12px;
+      border-radius: 100px;
+      height: 26px;
+      width: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 1px;
+      padding-top: 1px;
+      margin-right: 10px;
+
+      i {
+        display: none;
+      }
+    }
+
+    .space {
+      width: 100px;
+      height: 3px;
+      background-color: $border-primary;
+      margin-left: 15px;
+      margin-right: 20px;
+    }
+
+    &:last-of-type .space {
+      display: none;
+    }
+  }
+}
+
+.right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  > i {
+    color: $success;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid $border-primary;
+    padding-left: 10px;
+
+    > span {
+      &:first-of-type {
+        font-weight: bold;
+        font-size: 13px;
+      }
+
+      &:last-of-type {
+        color: $text-secondary;
+        font-size: 11px;
+        margin-top: -4px;
+      }
+    }
+  }
+}

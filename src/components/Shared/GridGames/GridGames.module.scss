@@ -1,0 +1,41 @@
+.gridGames {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  margin-top: 20px;
+}
+
+.game {
+  width: 33.33%;
+  margin-bottom: 10px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  > div {
+    position: relative;
+    padding: 10px 10px 0 10px;
+
+    &:last-of-type {
+      padding-top: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    > img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .discount {
+      position: absolute;
+      left: 10px;
+      bottom: 5px;
+    }
+
+    .price {
+      font-size: 18px;
+    }
+  }
+}

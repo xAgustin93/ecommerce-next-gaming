@@ -1,0 +1,95 @@
+@import "~/src/scss/index.scss";
+
+.platforms {
+  position: relative;
+  background-color: $background-quaternary__blur;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 50px 0 20px;
+  border-radius: 100px 0 0 100px;
+
+  > a {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    text-decoration: none;
+
+    img {
+      filter: brightness(0) invert(1);
+      height: 16px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.search {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  height: 100%;
+  width: 60px;
+  border: 0;
+
+  &:hover {
+    background-color: $primary-hover;
+    cursor: pointer;
+  }
+
+  > i {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+.inputContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: $primary;
+  border-radius: 100px;
+  display: none;
+
+  &.active {
+    display: flex;
+    width: calc(100% + 30px);
+  }
+
+  .input {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 100px;
+
+    > input {
+      background-color: $primary !important;
+      border: 0 !important;
+      color: $text-primary !important;
+      font-size: 16px;
+      padding: 10px 30px;
+
+      &::placeholder {
+        color: $text-primary !important;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .closeInput {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

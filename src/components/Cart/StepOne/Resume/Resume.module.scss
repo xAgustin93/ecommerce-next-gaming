@@ -1,0 +1,54 @@
+@import "~/src/scss/index.scss";
+
+.resume {
+  > h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  a {
+    margin-top: 20px;
+    color: $text-secondary;
+    font-size: 12px;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.block {
+  background-color: $background-quaternary;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+
+    > span {
+      font-size: 13px;
+      color: $text-secondary;
+    }
+
+    &:last-of-type {
+      > span {
+        margin-top: 10px;
+        color: $text-primary;
+        &:last-of-type {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

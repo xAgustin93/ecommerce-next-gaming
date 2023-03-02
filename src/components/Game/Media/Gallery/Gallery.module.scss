@@ -1,0 +1,92 @@
+.gallery {
+  display: flex;
+}
+
+.principal {
+  width: 50%;
+  padding-right: 10px;
+
+  > img {
+    border-radius: 16px;
+    height: 100%;
+    object-fit: cover;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+}
+
+.grid {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+
+  > div {
+    width: 50%;
+
+    &:nth-child(1) {
+      padding: 0 10px 10px 0;
+    }
+    &:nth-child(2) {
+      padding: 0 0 10px 10px;
+    }
+    &:nth-child(3) {
+      padding: 10px 10px 0 0;
+    }
+    &:nth-child(4) {
+      padding: 10px 0 0 10px;
+    }
+
+    > img {
+      border-radius: 16px;
+
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.carouselContainer {
+  height: 100%;
+
+  > div {
+    height: 100%;
+
+    > div {
+      width: 80%;
+      height: calc(100% - 100px);
+      margin: 0 auto;
+      border-radius: 20px;
+    }
+  }
+
+  .dots {
+    display: flex !important;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100px;
+
+    > li {
+      height: 100%;
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5px;
+
+      img {
+        border-radius: 10px;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

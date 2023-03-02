@@ -1,0 +1,29 @@
+.ui.menu.secondary.pointing {
+  border-bottom: 2px solid $border-primary;
+
+  a.item {
+    color: $text-primary;
+    font-weight: bold !important;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $primary !important;
+      border-color: $primary !important;
+    }
+
+    &.active {
+      color: $primary;
+      border-color: $primary;
+    }
+
+    > i {
+      color: $primary;
+    }
+  }
+}
+
+.ui.tab.segment.active {
+  background-color: transparent;
+  padding: 20px 0 0 0;
+}

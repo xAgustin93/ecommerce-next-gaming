@@ -1,0 +1,26 @@
+.ui.modal.confirm.visible.active {
+  background-color: $background-primary;
+  border-radius: 12px;
+  overflow: hidden;
+
+  > .content {
+    background-color: $background-primary;
+    color: $text-primary;
+    font-size: 18px;
+    padding: 20px 20px 0 20px !important;
+  }
+
+  > .actions {
+    background-color: $background-primary;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > .ui.button {
+      width: 48%;
+      padding: 15px !important;
+      margin: 0;
+    }
+  }
+}

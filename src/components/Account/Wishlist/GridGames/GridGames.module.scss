@@ -1,0 +1,50 @@
+.gridGames {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  margin-top: 20px;
+}
+
+.game {
+  position: relative;
+  width: 33.33%;
+  margin-bottom: 10px;
+
+  > a > div {
+    position: relative;
+    padding: 10px 10px 0 10px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:last-of-type {
+      padding-top: 0px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    > img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .discount {
+      position: absolute;
+      left: 10px;
+      bottom: 5px;
+    }
+
+    .price {
+      font-size: 18px;
+    }
+  }
+}
+
+.whislistIcon {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 20px !important;
+  z-index: 1;
+}

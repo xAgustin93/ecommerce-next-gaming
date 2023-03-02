@@ -1,0 +1,10 @@
+@import "~/src/scss/index.scss";
+
+.noResult {
+  text-align: center;
+  margin-top: 50px;
+
+  p {
+    color: $text-secondary;
+  }
+}

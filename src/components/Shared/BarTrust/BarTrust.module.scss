@@ -1,0 +1,43 @@
+@import "~/src/scss/index.scss";
+
+.barTrust {
+  width: 100%;
+  background-color: $background-tertiary;
+}
+
+.content {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 40px 0;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  border-right: 1px solid $border-primary;
+
+  &:last-of-type {
+    border: 0;
+  }
+
+  i {
+    font-size: 35px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 13px;
+    color: $text-secondary;
+  }
+}

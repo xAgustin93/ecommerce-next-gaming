@@ -1,0 +1,28 @@
+.topBar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  z-index: 5;
+}
+
+.left {
+  width: 20%;
+
+  img {
+    height: 30px;
+  }
+}
+
+.center {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}

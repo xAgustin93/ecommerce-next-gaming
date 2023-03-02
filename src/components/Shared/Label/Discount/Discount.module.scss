@@ -1,0 +1,25 @@
+@import "~/src/scss/index.scss";
+
+.labelDiscount {
+  font-weight: 700;
+  background-color: $primary;
+  color: $text-primary;
+  position: absolute;
+  border-radius: 8px 8px 0;
+  padding: 3px 4px 1px 4px;
+  z-index: 2;
+  font-size: 13px;
+
+  &::after {
+    content: "";
+    transform: skewX(16deg);
+    width: 100%;
+    border-radius: 10px 5px;
+    position: absolute;
+    background-color: $primary;
+    top: 0;
+    bottom: 0;
+    right: -4px;
+    z-index: -1;
+  }
+}

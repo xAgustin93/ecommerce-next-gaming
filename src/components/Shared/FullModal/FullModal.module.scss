@@ -1,0 +1,21 @@
+@import "~/src/scss/index.scss";
+
+.fullModal {
+  width: 100% !important;
+  height: 100%;
+  margin: 0 !important;
+  top: 0;
+  border-radius: 0 !important;
+
+  > div {
+    height: 100%;
+  }
+}
+
+.close {
+  position: absolute !important;
+  top: 10px !important;
+  right: 20px !important;
+  font-size: 40px !important;
+  color: $danger !important;
+}
